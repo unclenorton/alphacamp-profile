@@ -1,0 +1,72 @@
+/* CSS Reset */
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, li {
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix:after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+/* Header */
+
+#header {
+	min-height: 40px;
+
+	padding-left: 64px;
+	padding-right: 64px;
+
+	background-color: #000;
+}
+
+.logo {
+	float: left;
+}
+
+.logo-image {
+	height: 40px;
+	width: auto;
+}
+
+.nav-list {
+	float: right;
+}
+
+.nav-list li {
+	float: left;
+	list-style-type: none;
+}
+
+.nav-list a {
+	display: inline-block;
+	padding: 12px;
+	color: #fff;
+
+	text-decoration: none;
+}
+
+.nav-list a:hover {
+	color: #ff9d00;
+}
