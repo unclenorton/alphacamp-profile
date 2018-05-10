@@ -240,6 +240,10 @@ section h6 {
 	border-bottom: 1px solid #000;
 }
 
+h2 + .row { /* .row with and h2 before it */
+	padding-top: 0;
+}
+
 .row:last-child {
 	border-bottom: none;
 }
