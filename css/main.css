@@ -189,6 +189,10 @@ section h3:first-child {
 }
 
 /* Services section */
+.my-services {
+	background-color: rgba(220, 0, 0, 0.1);
+}
+
 .service-items {
 	display: flex;
 	justify-content: center;
