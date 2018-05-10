@@ -58,6 +58,17 @@ section h3:first-child {
 	margin-top: 0;
 }
 
+section h5 {
+	font-size: 1em;
+	margin: 1em 0 0.15em;
+}
+
+section h6 {
+	font-size: 0.85em;
+	margin: 0.15em 0 0.05em;
+	color: #999;
+}
+
 .container {
 	padding: 100px 64px;
 }
@@ -205,4 +216,30 @@ section h3:first-child {
 
 .service-item i {
 	font-size: 50px;
+}
+
+/* Resume section */
+.resume-items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.resume-item {
+	width: 45%;
+}
+
+.experience-year {
+	display: inline-block;
+	padding: .25em 1em;
+	color: #fff;
+	background-color: #000;
+}
+
+.row {
+	padding: 20px 20px 10px;
+	border-bottom: 1px solid #000;
+}
+
+.row:last-child {
+	border-bottom: none;
 }
