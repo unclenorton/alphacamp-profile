@@ -165,7 +165,7 @@ section h6 {
 	margin-bottom: 1em;
 }
 
-.hero__icon {
+.social-icon {
 	margin: 1em;
 	color: #fff;
 }
@@ -398,4 +398,13 @@ textarea:focus + label {
 	transform: translateY(1.75em) scale(1.25);
 	font-weight: normal;
 	opacity: 0.5;
+}
+
+/* Footer */
+.footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #fff;
+	background: #000;
+	text-align: center;
 }
