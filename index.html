@@ -13,7 +13,7 @@
 
 	<title>Someone's personal page</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#nav-list" data-offset="0">
 	<header id="header">
 		<div class="clearfix">
 			<nav>
@@ -29,7 +29,7 @@
 				</button>
 				
 
-				<ul class="nav-list clearfix">
+				<ul id="nav-list" class="nav-list clearfix">
 					<li class="nav-item">
 						<a class="nav-link" href="#home">Home</a>
 					</li>
@@ -49,7 +49,7 @@
 			</nav>
 		</div>
 	</header>
-	<section class="hero">
+	<section id="home" class="hero">
 		<div class="hero__content">
 			<h1 class="hero__title">
 				Hello, I am Dmitry
@@ -228,20 +228,25 @@
 
 	<section id="contact" class="contact container">
 		<h2>Contact me</h2>
-		<form action="" class="form">
-			<div class="input-wrapper input-wrapper_half">
-				<input type="text" name="name" value="" placeholder=" " class="input-floating">
-				<label for="name">Your name</label>
+
+		<form action="" class="row">
+			<div class="form-group col-sm-6">
+				<label for="name">Your name:</label>
+				<input name="name" type="text" class="form-control">
+
 			</div>
-			<div class="input-wrapper input-wrapper_half">
-				<input type="email" name="email" value="" placeholder=" " class="input-floating">
-				<label for="name">Your email</label>
+			<div class="form-group col-sm-6">
+				<label for="name">Your email:</label>
+				<input name="email" type="text" class="form-control">
+				<small class="form-text text-muted">Should be like someone@example.com</small>
 			</div>
-			<div class="input-wrapper input-wrapper_full">
-				<textarea name="message" id="" cols="30" rows="10"></textarea>
-				<label for="message">Your message</label>
+			<div class="form-group col-12">
+				<label for="message">Your message:</label>
+				<textarea name="message" id="" cols="30" rows="10" class="form-control"></textarea>
 			</div>
-			<input type="submit" value="Send message" class="button button-normal">
+			<div class="form-group col-sm-4">
+				<input type="submit" class="form-control btn btn-primary" value="Send message">
+			</div>
 		</form>
 	</section>
 
@@ -255,10 +260,8 @@
 		</div>
 	</footer>
 
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 </html>

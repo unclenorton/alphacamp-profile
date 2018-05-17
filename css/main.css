@@ -30,7 +30,8 @@ p {
 }
 
 a:hover,
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
 	color: #ff9d00;
 }
 
@@ -306,70 +307,6 @@ h2 + .resume-row { /* .resume-row with and h2 before it */
 
 /* Form */
 
-.input-wrapper {
-	position: relative;
-	margin: 1em 0 2em;
-}
-
-.input-wrapper_half {
-	width: 48%;
-}
-
-.input-wrapper_full {
-	width: 100%;
-}
-
-
-/* Floating label */
-
-label {
-	transition: all .25s ease;
-	position: absolute;
-	top: -1.5em;
-	left: 0;
-	font-size: 0.75em;
-	font-weight: bold;
-	transform-origin: 0 0;
-	color: #999;
-}
-
-.form {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	width: 50%;
-	margin: auto;
-	min-width: 600px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-	width: 100%;
-	padding: 0.5em 1em;
-	padding-left: 0;
-	font-size: .85em;
-	border: none;
-	border-bottom: 1px solid #ccc;
-}
-
-input:focus,
-textarea:focus { 
-	outline: none; 
-	border-bottom-color: #ff9d00;
-}
-
-input:focus,
-textarea:focus + label {
-	color: #ff9d00;
-}
-
-.input-floating:placeholder-shown + label {
-	pointer-events: none;
-	transform: translateY(1.75em) scale(1.25);
-	font-weight: normal;
-	opacity: 0.5;
-}
 
 /* Footer */
 .footer {
@@ -493,14 +430,5 @@ textarea:focus + label {
 
 
 	/* Contact */
-	.form {
-		display: block;
-		width: 100%;
-		min-width: 0;
-	}
 
-	input,
-	.input-wrapper_half {
-		width: 100%;
-	}
 }
