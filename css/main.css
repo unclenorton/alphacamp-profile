@@ -201,31 +201,11 @@ section h6 {
 	background-color: rgba(220, 0, 0, 0.1);
 }
 
-.service-items {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
-.service-item {
-	width: 400px;
-	padding: 0 40px;
-}
-
 .service-item i {
 	font-size: 50px;
 }
 
 /* Resume section */
-.resume-items {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-.resume-item {
-	width: 45%;
-}
 
 .experience-year {
 	display: inline-block;
@@ -234,16 +214,16 @@ section h6 {
 	background-color: #000;
 }
 
-.row {
+.resume-row {
 	padding: 20px 20px 10px;
 	border-bottom: 1px solid #000;
 }
 
-h2 + .row { /* .row with and h2 before it */
+h2 + .resume-row { /* .resume-row with and h2 before it */
 	padding-top: 0;
 }
 
-.row:last-child {
+.resume-row:last-child {
 	border-bottom: none;
 }
 
@@ -303,26 +283,16 @@ h2 + .row { /* .row with and h2 before it */
 	padding-bottom: 0;
 }
 
-.portfolio-items {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	max-width: 1200px;
-	margin: auto;
-}
-
 .portfolio-item {
 	position: relative;
-	width: 300px;
-	height: 300px;
-	margin: 0 20px 40px;
 }
 
 .portfolio-image {
 	position: relative;
 	display: block;
-	width: 100%;
-	height: 100%;
+	max-width: 100%;
+	width: 300px;
+	height: 300px;
 	object-fit: cover;
 	object-position: center center;
 
@@ -403,8 +373,6 @@ textarea:focus + label {
 
 /* Footer */
 .footer {
-	padding-top: 30px;
-	padding-bottom: 30px;
 	color: #fff;
 	background: #000;
 	text-align: center;
@@ -420,14 +388,7 @@ textarea:focus + label {
 
 /* Tablet and mobile */
 
-/* This is applied between 921 and 1000px browser width) */
-@media screen and (min-width: 921px) and (max-width: 1000px) {
-	.container {
-		padding: 100px 40px;
-	}
-}
-
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 768px) {
 	#header {
 		overflow: hidden;
 		padding-left: 40px;
@@ -503,9 +464,7 @@ textarea:focus + label {
 	/* Services */
 
 	.service-item {
-		width: 100%;
-		margin-top: 2.5em;
-		padding: 0;
+		margin-top: 3.5rem;
 		text-align: center;
 	}
 
@@ -519,19 +478,19 @@ textarea:focus + label {
 	}
 
 	.resume-item {
-		width: 100%;
-		margin-top: 1em;
-		margin-bottom:;
+		margin-top: 1rem;
 	}
 
-	.row {
+	.resume-row {
 		padding: 50px 0 30px;
 	}
 
 	/* Portfolio */
-	.portfolio-item {
-		padding: 0 5px 20px;
+	.portfolio-image {
+		width: 100%;
+		height: auto;
 	}
+
 
 	/* Contact */
 	.form {
@@ -543,12 +502,5 @@ textarea:focus + label {
 	input,
 	.input-wrapper_half {
 		width: 100%;
-	}
-}
-
-@media screen and (max-width: 800px) {
-	.portfolio-item {
-		width: 100%;
-		height: auto;
 	}
 }
