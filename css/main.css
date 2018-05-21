@@ -267,6 +267,7 @@ h2 + .resume-row { /* .resume-row with and h2 before it */
 
 .portfolio-item {
 	position: relative;
+	cursor: pointer;
 }
 
 .portfolio-image {
