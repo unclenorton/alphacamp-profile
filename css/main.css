@@ -96,32 +96,13 @@ section h6 {
 	width: 100%;
 	min-height: 40px;
 
-	padding-left: 64px;
-	padding-right: 64px;
-
-	background-color: #000;
 	z-index: 100;
-}
-
-.logo {
-	float: left;
 }
 
 .logo-image {
 	display: block;
 	height: 40px;
 	width: auto;
-}
-
-.nav-list {
-	float: right;
-	right: -100%;
-	transition: all .5s ease;
-}
-
-.nav-item {
-	float: left;
-	list-style-type: none;
 }
 
 .nav-list a {
@@ -326,65 +307,6 @@ h2 + .resume-row { /* .resume-row with and h2 before it */
 /* Tablet and mobile */
 
 @media screen and (max-width: 768px) {
-	#header {
-		overflow: hidden;
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-	/* Collapsible menu */
-
-	.menu-button { 
-		float: right;
-		width: 40px;
-		font-size: 40px; 
-		line-height: 30px; 
-		color: white; 
-		background: transparent; 
-		border: 0; 
-	}
-
-	.nav-list {
-		position: fixed;
-		float: none;
-		width: 200px;
-		height: 100%;
-		top: 40px;
-		right: -100%;
-		background: #333;
-	}
-
-	.nav-item {
-		float: none;
-		text-align: center;
-	}
-
-	.nav-item a {
-		width: 100%;
-	}
-
-	.nav-item a:hover {
-		background: #fff;
-	}
-
-	.menu-button-checkbox {
-		position: absolute;
-		width: 40px;
-		height: 40px;
-		left: auto;
-		right: 40px;
-		margin: 0;
-		opacity: 0;
-		cursor: pointer;
-	}
-
-	.menu-button-checkbox:checked ~ .nav-list { 
-		display: block;
-		right: 0;
-	}
-
-	.menu-button-checkbox:checked ~ .menu-button { 
-		color: #ff9d00;
-	}
 
 	/* About me */
 
