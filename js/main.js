@@ -10,7 +10,7 @@
   let headerElement = document.querySelector('#header');
 
   // Define the colours
-  let colorArray = ['bg-dark', 'bg-primary', 'bg-warning', 'bg-success', 'bg-error'];
+  let colorArray = ['bg-dark', 'bg-primary', 'bg-warning', 'bg-success', 'bg-danger'];
 
   function changeNavbarColor(colorClass) {  	
   	navbarElement.classList.remove('bg-dark'); // Disable the default colour
