@@ -8,18 +8,43 @@
   let navigationLinks = document.querySelectorAll('.nav-link');
   let navbarElement = document.querySelector('.navbar');
   let headerElement = document.querySelector('#header');
+  let formElement = document.querySelector('form');
+  let textElement = document.querySelector('#message');
+  let validationMessageElement = document.querySelector('#messageError');
 
   // Define the colours
   let colorArray = ['bg-dark', 'bg-primary', 'bg-warning', 'bg-success', 'bg-danger'];
 
-  function changeNavbarColor(colorClass) {  	
+  function changeNavbarColor(colorClass) {
   	navbarElement.classList.remove('bg-dark'); // Disable the default colour
   	headerElement.className = colorArray[colorClass];
   }
 
+  headerElement.onclick = function () {
+    headerElement.innerHTML = "";
+  }
+
+  formElement.addEventListener('submit', function (event) {
+    // First, prevent the form from submitting
+    event.preventDefault();
+    debugger;
+
+    if (textElement.value === '') {
+      // If the message is empty, make the error visible
+      validationMessageElement.classList.remove('d-none');
+    } else {
+      // If not empty, hide the error...
+      validationMessageElement.classList.add('d-none');
+      // And submit the form
+      formElement.submit();
+    }
+  });
+
   // Assign the event handler to all the links
   for (let i = 0; i < navigationLinks.length; i++) {
-  	navigationLinks[i].onclick = function () {
+  	navigationLinks[i].onclick = function (event) {
+      event.preventDefault();
+      event.stopPropagation();
   		changeNavbarColor(i);
   	}
   }

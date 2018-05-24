@@ -245,7 +245,7 @@
 	<section id="contact" class="contact container">
 		<h2>Contact me</h2>
 
-		<form action="" class="row">
+		<form action="index.html" class="row">
 			<div class="form-group col-sm-6">
 				<label for="name">Your name:</label>
 				<input name="name" type="text" class="form-control">
@@ -258,7 +258,8 @@
 			</div>
 			<div class="form-group col-12">
 				<label for="message">Your message:</label>
-				<textarea name="message" id="" cols="30" rows="10" class="form-control"></textarea>
+				<textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+				<small class="form-text text-danger d-none" id="messageError">Please write something</small>
 			</div>
 			<div class="form-group col-sm-4">
 				<input type="submit" class="form-control btn btn-primary" value="Send message">
