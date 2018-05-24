@@ -24,5 +24,16 @@
   	}
   }
 
+  var navButton = document.querySelector('.navbar-toggler');
+  var bodyElement = document.querySelector('body');
+
+  navButton.onclick = function () {
+    if (bodyElement.className === "with-menu") {
+      bodyElement.className = "";
+    } else {
+      bodyElement.className = "with-menu";
+    }
+  };
+
   /* End of your code */
 })();
