@@ -1,4 +1,4 @@
-(function(){
+$(function(){
   "use strict";
   /* Start of your code */
 
@@ -27,7 +27,6 @@
   formElement.addEventListener('submit', function (event) {
     // First, prevent the form from submitting
     event.preventDefault();
-    debugger;
 
     if (textElement.value === '') {
       // If the message is empty, make the error visible
@@ -60,5 +59,28 @@
     }
   };
 
+  // Ajax call
+  $.ajax({
+    url : 'https://reqres.in/api/unknown',
+    data : '',
+    type : 'GET',
+    dataType : 'json'
+  }).done(function (json) {
+
+    if (json.data !== undefined) { // Check if the data is there
+      for (let i = 0; i < json.data.length; i++) { // Iterate over the array
+        let newOption = $('<option>') // Create a shadow element
+            .attr('value', json.data[i].color)
+            .text(json.data[i].name);
+
+        newOption.appendTo($('#colours')); // Add the element to the select box
+      }  
+    }
+    
+    $('#colours').on('change', function () { // Handle the selection event
+      $('#message').css('background-color', $('#colours').val() );
+    });
+  });
+
   /* End of your code */
-})();
+});
