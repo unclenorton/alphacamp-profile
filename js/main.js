@@ -25,16 +25,21 @@ $(function(){
   formElement.addEventListener('submit', function (event) {
     // First, prevent the form from submitting
     event.preventDefault();
+    formElement.classList.remove('invalid');
 
-    if (textElement.value === '') {
-      // If the message is empty, make the error visible
-      validationMessageElement.classList.remove('d-none');
-    } else {
-      // If not empty, hide the error...
-      validationMessageElement.classList.add('d-none');
-      // And submit the form
-      formElement.submit();
-    }
+    window.setTimeout(function () {
+      if (textElement.value === '') {
+        // If the message is empty, make the error visible
+        validationMessageElement.classList.remove('d-none');
+        formElement.classList.add('invalid');
+      } else {
+        // If not empty, hide the error...
+        validationMessageElement.classList.add('d-none');
+        // And submit the form
+        formElement.submit();
+      }
+    }, 10);
+    
   });
 
   // Assign the event handler to all the links

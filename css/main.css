@@ -298,6 +298,36 @@ h2 + .resume-row { /* .resume-row with and h2 before it */
 }
 
 /* Form */
+@keyframes wiggle {
+
+  0% {
+    transform: translateX(0em);
+  }
+
+  30% {
+    transform: translateX(-3em);
+  }
+  
+  45% {
+    transform: translateX(3em);
+  }
+
+  55% {
+    transform: translateX(-1em);
+  }
+  
+  70% {
+    transform: translateX(1em);
+  }
+
+  100% {
+    transform: translateX(0em);
+  }
+}
+
+form.invalid {
+	animation: wiggle 0.5s ease-out forwards 1;
+}
 
 
 /* Footer */
@@ -314,6 +344,7 @@ h2 + .resume-row { /* .resume-row with and h2 before it */
 		display: none;
 	}
 }
+
 
 /* Tablet and mobile */
 
