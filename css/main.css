@@ -167,6 +167,88 @@ section h6 {
 	color: #fff;
 }
 
+.hero__scroll {
+	position: absolute;
+	width: 24px;
+	left: 50%;
+	bottom: 10px;
+	margin-left: -12px;
+	border: 2px solid #fff;
+	padding: 5px;
+	border-radius: 20px;
+}
+
+.hero__scroll i {
+	display: block;
+	width: 10px;
+	height: 10px;
+	line-height: 10px;
+	margin: auto;
+	color: #fff;
+}
+
+.arrow_one {
+	animation: arrow_one 1s ease-in infinite;
+}
+
+.arrow_two {
+	animation: arrow_two 1s linear infinite;
+}
+
+.arrow_three {
+	animation: arrow_three 1s ease-out infinite;
+}
+
+@keyframes arrow_one {
+	0% {
+		color: #fff;
+	}
+
+	20% {
+		color: #ff9d00;
+	}
+
+	50% {
+		color: #fff;
+	}
+
+	100% {
+		color: #fff;
+	}
+}
+
+@keyframes arrow_two {
+	0% {
+		color: #fff;
+	}
+
+	50% {
+		color: #ff9d00;
+	}
+
+	100% {
+		color: #fff;
+	}
+}
+
+@keyframes arrow_three {
+	0% {
+		color: #fff;
+	}
+
+	50% {
+		color: #fff;
+	}
+
+	80% {
+		color: #ff9d00;
+	}
+
+	100% {
+		color: #fff;
+	}
+}
+
 /* About section */
 .summary {
 	display: flex;
