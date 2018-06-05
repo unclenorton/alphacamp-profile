@@ -289,13 +289,11 @@ h2 + .resume-row { /* .resume-row with and h2 before it */
 	height: 300px;
 	object-fit: cover;
 	object-position: center center;
-
-	
+	transition: all .5s ease;
 }
 
 .portfolio-item:hover .portfolio-image {
 	margin-top: -10px;
-	transition: all .5s ease;
 	box-shadow: 5px 5px 25px rgba(0,0,0,0.25);
 }
 
