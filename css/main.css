@@ -129,7 +129,7 @@ section h6 {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	background: transparent url('../images/od-11-bg.jpg') center center no-repeat fixed;
+	background: transparent url('../images/hero.jpg') center center no-repeat fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
